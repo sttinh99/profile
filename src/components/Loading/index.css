@@ -1,0 +1,88 @@
+.loader {
+    border: 3px solid #22ffe6;
+    border-radius: 50%;
+    border-top: 0px solid #3498db;
+    border-bottom: 0px solid #5eff26;
+    width: 250px;
+    height: 250px;
+    animation: spin 2s linear infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+/* Main styles */
+ .text {
+	 /* fill: none; */
+	 stroke-width: 1;
+	 stroke-linejoin: round;
+	 stroke-dasharray: 70 100;
+	 stroke-dashoffset: 0;
+	 -webkit-animation: stroke 2s infinite linear;
+	 animation: stroke 2s infinite linear;
+}
+ .text:nth-child(5n + 1) {
+	 stroke: #f2385a;
+	 -webkit-animation-delay: -0.4s;
+	 animation-delay: -0.4s;
+}
+ .text:nth-child(5n + 2) {
+	 stroke: #f5a503;
+	 -webkit-animation-delay: -0.8s;
+	 animation-delay: -0.8s;
+}
+ .text:nth-child(5n + 3) {
+	 stroke: #efff0c;
+	 -webkit-animation-delay: -1.2s;
+	 animation-delay: -1.2s;
+}
+ .text:nth-child(5n + 4) {
+	 stroke: #12ff31;
+	 -webkit-animation-delay: -1.6s;
+	 animation-delay: -1.6s;
+}
+ .text:nth-child(5n + 5) {
+	 stroke: #fd05f1;
+	 -webkit-animation-delay: -2s;
+	 animation-delay: -2s;
+}
+ @-webkit-keyframes stroke {
+	 100% {
+		 stroke-dashoffset: -400;
+	}
+}
+ @keyframes stroke {
+	 100% {
+		 stroke-dashoffset: -400;
+	}
+}
+ svg {
+	font-size: 1rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+@media only screen and (max-width:700px) {
+    svg{
+        font-size: 3rem;
+    }
+    .loader {
+        width: 200px;
+        height: 200px;
+      }
+  }
