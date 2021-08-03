@@ -4,7 +4,7 @@ import './profile.css'
 export default function Profile() {
     return (
         <div className='profile'>
-            Tịnh
+            <h1>Điên :)))</h1>
         </div>
     )
 }
