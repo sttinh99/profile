@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false)
-  }, 8000);
+  }, 4000);
   return (
     <div className="App" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
       {loading ? <Loading /> : <Profile />}

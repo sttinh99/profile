@@ -6,7 +6,7 @@ export default function Loading() {
     useEffect(() => {
         const x = setTimeout(() => {
             setStep(step + 50)
-        }, 50)
+        }, 10)
         if (step === 5000) {
             clearTimeout(x)
         }

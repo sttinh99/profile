@@ -1,7 +1,12 @@
+@font-face {
+    font-family: myname;
+    src: url('../../fonts/ariel-script-d071.ttf');
+}
+
 .profile {
     width: 100%;
     height: 100%;
-    background-color: rgb(236, 212, 212);
+    background: #c0f;
     animation-name: timer;
     animation-duration: 4s;
 }
@@ -14,9 +19,118 @@
     to { 
         width: 100%;
         height: 100%;
-        background-color: rgb(236, 212, 212);
+        background: #c0f;
         opacity: 1;
     }
-  }
+}
   
   /* The element to apply the animation to */
+
+.header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;    
+    box-shadow: 0px 10px 45px violet;
+}
+.header .logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.header .nav-bar{
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+.nav-bar ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none
+}
+.nav-bar ul li:hover{
+
+}
+.header .logo strong{
+    font-family: myname;
+    font-size: 55px;
+    color:white;
+}
+.header .nav-bar img{
+    width: 40px;
+    display: none;
+}
+.abc{
+    width: 15%;
+}
+@media only screen and (max-width:650px) {
+    .abc{
+        width: 0;
+    }
+    .header .logo{
+        width: 300px;
+    }
+    .header .logo strong{
+        font-family: myname;
+        font-size: 20px;
+    }
+    .header .nav-bar ul{
+        width: 50%;
+        opacity: 0;
+        display: block;
+        transform: translateX(104px);
+        transition: 2s;
+    }
+    .header .nav-bar img{
+        display: block;
+        margin-left: 60px;
+        transition: 2s;
+        z-index: 5;
+    }
+    .header .nav-bar img.show{
+        transform: translateX(-50px);
+        transition: 2s;
+    }
+    .header .nav-bar ul.show{
+        opacity: 1;
+        transform: translateX(-80px);
+        transition: 2s;
+    }
+  }
+  @media only screen and (min-width:450px) and (max-width:650px){
+    .header .nav-bar img{
+        display: block;
+        margin-left: 120px
+    }
+  }
+  @media only screen and (min-width:650px) and (max-width:1000px) {
+    .header .logo{
+        width: 400px;
+    }
+    .header .logo strong{
+        font-family: myname;
+        font-size: 25px;
+    }
+    .header .nav-bar{
+        width: 100%;
+    }
+    .nav-bar ul{
+        width: 50%;
+    }
+  }
+/*section*/
+section .top{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+    background: black;
+}
+section .top .top-left{
+    width: 40%;
+    height: 100%;
+}
+section .top .top-right{
+    width: 60%;
+}
