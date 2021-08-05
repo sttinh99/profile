@@ -11,59 +11,63 @@
     justify-content: center;
     align-items: center;
 }
+.right .text{
+    position: absolute;
+    top: 470px;
+    width: 100%;
+    height: 100px;
+}
+.right .text-field{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125em; 
+    word-break: break-word;
+    white-space: normal;
+}
 .right .gido img{
     width: 350px;
     height: 300px;
 }
-.right .text-amination{
-    width: 100%;
-    height: 100%;
-}
-.right .text-amination p{
-    display: inline-block;
-    position: absolute;
-    color:white;
-    opacity: 0;
-    
-}
-.right .text-amination p.t1{
-    top: 420px;
-    animation: myt1 10s forwards;
-}
-.right .text-amination p.t2{
-    top: 430px;
-    animation: myt2 20s forwards;
-}
-.right .text-amination p.t3{
-    top: 440px;
-    animation: myt3 30s forwards;
-}
-.right .text-amination p.t4{
-    top: 450px;
-    animation: myt4 40s forwards;
-}
-.right .text-amination p.t5{
-    top: 460px;
-    animation: myt5 50s forwards;
-}
-@keyframes myt1 {
-    0% {right: -1000px;}
-    100% {right: 295px;opacity: 1;}
-  }
-@keyframes myt2 {
-    0% {right: -1500px;}
-    100% {right: 295px;opacity: 1;}
-  }
-@keyframes myt3 {
-    0% {right: -3000px;}
-    100% {right: 295px;opacity: 1;}
-  }
-@keyframes myt4 {
-    0% {right: -6000px;}
-    100% {right: 295px;opacity: 1;}
-  }
-@keyframes myt5 {
-    0% {right: -9000px;}
-    100% {right: 295px;opacity: 1;}
-  }
 /*========================*/
+@media only screen and (min-width:250px) and (max-width:650px){
+    .right .gido img{
+        width: 300px;
+        height: 270px;
+    }
+    .Words:hover p {
+        transform: translate3d(0, -157px, 0);
+    }
+    .Words {
+        margin-top: 70px;
+        font-size: 37px;
+    }
+    .right .text{
+        top: 320px;
+        word-break: break-word;
+        white-space: normal;
+        line-height: 1;
+    }
+    .right .gido {
+        height: 60%;
+    }
+}
+@media only screen and (min-width:650px) and (max-width:1000px){
+    section .top .top-right {
+        width: 100%;
+        height: 470px;
+        margin: auto;
+    }
+    .right .text {
+        top: 385px;
+        word-break: break-word;
+        white-space: normal;
+        line-height: 0.8;
+    }
+    .right .gido {
+        height: 85%;
+    }
+}

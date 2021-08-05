@@ -9,13 +9,9 @@ export default function RightIntro() {
             <div className="gido">
                 <img src={my} alt="avatar"></img>
             </div>
-            {/* <div className='text-amination'>
-                <p className='t1'>qqqqqqqqqqqqqqqqqqqqqqqqqqqq</p>
-                <p className='t2'>pppppppppppppppppppppppppppp</p>
-                <p className='t3'>qqqqqqqqqqqqqqqqqqqqqqqqqqqq</p>
-                <p className='t4'>pppppppppppppppppppppppppppp</p>
-                <p className='t5'>================================</p>
-            </div> */}
-        </div>
+            <div className="text">
+                <p className="text-field">If you're just curious about my story, or you just want to grab my résumé, you're in the right spot.</p>
+            </div>
+        </div >
     );
 }

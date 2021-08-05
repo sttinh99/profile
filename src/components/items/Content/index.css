@@ -1,0 +1,50 @@
+@font-face {
+    font-family: fontcontent;
+    src: url('../../../fonts/BuffaloScript-Regular.otf');
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    background: #c0f;
+}
+.content .content-1,
+.content .content-2,
+.content .content-3{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ct-1-l ,.ct-3-l{
+    width: 25%;
+}
+.ct-1-r ,.ct-3-r{
+    width: 75%;
+}
+.ct-1-r p,.ct-3-r p,.ct-2-l p{
+    width: 80%;
+    transform: none!important;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.5;
+    font-family: 'fontContent';
+    font-weight: 900;
+    color: white;
+    font-size: 25px;
+}
+@media only screen and (min-width:250px) and (max-width:650px){
+    .content .content-1, .content .content-2, .content .content-3{
+        display: block;
+    }
+    .ct-1-r, .ct-3-r{
+        height: auto;
+    }
+    .ct-1-r p, .ct-3-r p, .ct-2-l p {
+        height: auto;
+    }
+}
+@media only screen and (min-width:650px) and (max-width:1000px){
+    
+}

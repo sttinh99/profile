@@ -6,6 +6,7 @@ import './profile.css'
 import menu from '../../images/menu.png'
 import TextIntro from '../items/TextIntro/TextIntro.js'
 import RightIntro from '../items/RightIntro'
+import Content from '../items/Content'
 
 
 export default function Profile() {
@@ -45,6 +46,7 @@ export default function Profile() {
                         <RightIntro />
                     </div>
                 </div>
+                <Content />
             </section>
         </div >
     )
