@@ -9,52 +9,61 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 50px;
+    align-items: center;
 }
 .right .gido img{
-    width: 400px;
-    height: 350px;
+    width: 350px;
+    height: 300px;
 }
 .right .text-amination{
     width: 100%;
     height: 100%;
 }
 .right .text-amination p{
+    display: inline-block;
     position: absolute;
     color:white;
     opacity: 0;
     
 }
 .right .text-amination p.t1{
-    top: 450px;
+    top: 420px;
     animation: myt1 10s forwards;
 }
 .right .text-amination p.t2{
-    top: 480px;
+    top: 430px;
     animation: myt2 20s forwards;
 }
 .right .text-amination p.t3{
-    top: 510px;
+    top: 440px;
     animation: myt3 30s forwards;
 }
 .right .text-amination p.t4{
-    top: 540px;
+    top: 450px;
     animation: myt4 40s forwards;
+}
+.right .text-amination p.t5{
+    top: 460px;
+    animation: myt5 50s forwards;
 }
 @keyframes myt1 {
     0% {right: -1000px;}
-    100% {right: 355px;opacity: 1;}
+    100% {right: 295px;opacity: 1;}
   }
 @keyframes myt2 {
     0% {right: -1500px;}
-    100% {right: 345px;opacity: 1;}
+    100% {right: 295px;opacity: 1;}
   }
 @keyframes myt3 {
     0% {right: -3000px;}
-    100% {right: 310px;opacity: 1;}
+    100% {right: 295px;opacity: 1;}
   }
 @keyframes myt4 {
     0% {right: -6000px;}
-    100% {right: 310px;opacity: 1;}
+    100% {right: 295px;opacity: 1;}
+  }
+@keyframes myt5 {
+    0% {right: -9000px;}
+    100% {right: 295px;opacity: 1;}
   }
 /*========================*/
